@@ -1,0 +1,123 @@
+/*
+Theme Name: SpookySoo Haunted Sites
+Description: Responsive Halloween web app
+Author: Amanda Anderson
+Author URL: github.com/amanda-anderson/Spooky-Soo
+Tags: Leaflet, Web Map, MapBox, Halloween, Haunted
+*/
+
+
+/* ----------- TABLET / MOBILE CSS ---------- */
+html, body {
+   height: 100%;
+   padding: 0px;
+   margin: 0px;
+}
+
+#mapid {
+  outline: none;
+  top: 60px;
+  bottom: 0px;
+  margin: 0px;
+  width: 100%;
+  position: fixed;
+  }
+  
+p {
+   font-family: 'Raleway', sans-serif; 
+   font-size: 14px;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #fd652c;
+}
+
+#header {
+    background-color: #312647;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 60px;
+}
+
+#ghostImg {
+    margin-top: 5px;
+    height: 50px;
+    width: auto;
+    animation: float 2s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes float {
+    0%    { margin-top: 2px;}
+    60%   { margin-top:8px;}
+    100%  { margin-top: 3px;}
+}
+
+#titleImg {
+    height: 50px;
+    width: auto;
+    position: fixed;
+    margin-top: 4px;
+}
+
+#gitImg {
+    height: 45px;
+    width: auto;
+    float: right;
+    padding-top: 7px;
+    padding-right: 10px;
+}
+
+.leaflet-marker-icon {
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#popup_image {
+    border-radius: 5%;
+    animation: fadein 0.5s;
+}
+
+.leaflet-control-zoom-in {
+    border: 0px;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+    color: #41315b !Important; 
+    font-size: 32px !Important;
+    padding: 10px !Important;
+    font-family: 'Raleway', sans-serif !Important;
+}
+
+.leaflet-touch .leaflet-bar a:first-child {
+    border-radius: 5px !Important;
+}
+
+.leaflet-touch .leaflet-bar a:last-child {
+    border-radius: 5px !Important;
+    margin-top: 5px !Important;
+}
+
+.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+    border-style: none !Important;
+    position: fixed;
+}
+
+.leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out {
+    font-size: 28px !Important;
+    padding: 2px;
+   font-family: 'Raleway', sans-serif; 
+}
+
+.leaflet-container a {
+    color: #fd652c !Important;
+}
