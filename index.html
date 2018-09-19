@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta name="generator" content=
+    "HTML Tidy for HTML5 for Windows version 5.2.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>
+      Spooky Soo
+    </title>
+    
+    <link rel="icon" href="images/ghost.png">
+
+    <meta name="description" content="Explore the haunted places of Sault Ste Marie, MI using an interactive web map.">
+    <meta name="Amanda Anderson" content="Web Map">
+    <link rel="stylesheet" href="stylesheets/style1.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href=
+    "https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity=
+    "sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin=""><a href="https://geo2.ggpht.com/maps/photothumb/fd/v1?bpb=ChAKDnNlYXJjaC5UQUNUSUxFEmYKOAm5QlwfpTk2TRGkx7pqYdRV8RokCxDThbhCGhsSGQoUChIJuUJcH6U5Nk0R3WKBNnR8ryIQ3wEMEgoNLHu3GxWmgbnNGhIJgQLiIp85Nk0R_HJs1hkOepEqCg3MdLcbFVR9uc0aBgjIARCYAw&gl=CA"></a>
+    
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+    integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+    crossorigin=""></script>
+   <!-- Leaflet -->
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  
+  
+  <body>
+  
+    <div id="header">
+      <img id="ghostImg" src="images/ghost.png"></img>
+      <img id="titleImg" src="images/title.png"></img>
+      <a href="https://github.com/amanda-anderson/Spooky-Soo"><img id="gitImg" src="images/github.png"></img></a>
+    </div>
+    
+    <div id="mapid" class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(67px, 29px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 0;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 17; transform: translate3d(-1px, -1px, 0px) scale(2);"></div><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(-283px, -237px, 0px) scale(1);"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/13/4094/2724.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(594px, 402px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/13/4093/2724.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(338px, 402px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/13/4094/2723.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(594px, 146px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/13/4093/2723.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(338px, 146px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/13/4093/2725.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(338px, 658px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/13/4094/2725.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(594px, 658px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/13/4092/2724.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(82px, 402px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/13/4095/2724.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(850px, 402px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/13/4092/2725.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(82px, 658px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/13/4092/2723.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(82px, 146px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/13/4095/2723.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(850px, 146px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/13/4095/2725.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(850px, 658px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/13/4093/2722.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(338px, -110px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/13/4092/2722.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(82px, -110px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/13/4094/2722.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(594px, -110px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/13/4091/2724.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-174px, 402px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/13/4091/2723.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-174px, 146px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/13/4091/2725.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-174px, 658px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.tiles.mapbox.com/v4/mapbox.streets/13/4091/2722.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-174px, -110px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-marker-pane"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(1.04799e+06px, 697350px, 0px) scale(4096);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">-</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a></div></div></div></div>
+    
+    <script>
+      var map = L.map('mapid').setView([46.500, -84.338684], 15);
+      
+      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 18,
+        id: 'mapbox.dark',
+        accessToken: 'pk.eyJ1IjoiYWFuZGVyMDUiLCJhIjoiY2psemtwemwwMjJvbDN2cDRmdGtmcDFxNiJ9.TbzmjFcM3a9O84BiYTT5iw'
+      }).addTo(map);
+      
+      var candyCorn = L.icon({
+        iconUrl: 'images/corn_icon2.png',
+        iconSize: [30, 40],
+        popupAnchor: [0,-22]
+      });
+      
+      // Soo Brewing Company
+      var popup_1 = L.popup()
+      .setContent('<h3>Soo Brewing Company</h3><img id="popup_image" src="images/soo_brewing.jpg" height=auto width="250px" ></img><br><p>Under prior ownership as Superior Impressions, the team conducted several investigations on the premises. The building is believed to be haunted by a former ship captain whose family originally had the structure built, and ran their retail operations after leaving the lakes. Activity includes disembodied footsteps from the upper floor and formerly, and a Christmas caroler doll which would be moved to different locations in the store after the building had been locked for the night.</p>');
+      
+      var marker_1 = L.marker([46.500754, -84.348348],{
+        icon: candyCorn,
+      }).addTo(map);
+      marker_1.bindPopup(popup_1, {
+        maxWidth: 250,
+        keepInView: true
+      });
+      
+      // Antlers Restaurant
+      var popup_2 = L.popup()
+      .setContent('<h3>Antlers Restaurant</h3> <img id="popup_image" src="images/antlers_restaurant.jpg" height=auto width="250px" ></img>  <br> <p>Formerly operated as a speakeasy and brothel, the building is believed to be haunted by both a lady of the night & possibly a waitress. Doors have been known to open on their own and office equipment to turn on and off by itself. On one investigation, a team member was pushed on a stairway in the kitchen by an unseen force.</p>');
+      
+      var marker_2 = L.marker([46.494452, -84.329146],{
+        icon: candyCorn
+      }).addTo(map);
+      marker_2.bindPopup(popup_2, {
+        maxWidth: 250,
+        keepInView: true
+      });
+      
+      // Ramada Ojibway Plaza
+      var popup_3 = L.popup()
+      .setContent('<h3>Ramada Ojibway Plaza</h3> <img id="popup_image" src="images/RamadaOjibway.jpg" height=auto width="250px" ></img>  <br> <p>Believed to be haunted by Beatrice, the wife of a former owner. Rooms occupying what had consisted of her former suite have purportedly had patrons find their suitcases unpacked and rooms made up, although housekeeping service had not entered. There are also reports of a tall man in dress clothes and top hat being spotted wandering through the lobby area.</p>');
+      
+      var marker_3 = L.marker([46.501237, -84.348172],{
+        icon: candyCorn
+      }).addTo(map);
+      marker_3.bindPopup(popup_3, {
+        maxWidth: 250,
+        keepInView: true
+      });
+
+      // Satisfied Frog Pub
+      var popup_4 = L.popup()
+      .setContent('<h3>Satisfied Frog Pub</h3> <img id="popup_image" src="images/Satisfied_Frog.jpg" height=auto width="250px" ></img>  <br> <p>Reported activity includes nickels turning up on a formerly vacant bar and the spirit of a little girl who has been both seen and heard at the rear of the establishment. In a picture taken several years back, a gnarled, disembodied hand is seen gripping the shoulder of a young lady. No explanation has ever been reached as to where the "hand" came from.</p>');
+      
+      var marker_4 = L.marker([46.500660, -84.347609],{
+        icon: candyCorn,
+              keepInView: true
+      }).addTo(map);
+      marker_4.bindPopup(popup_4, {
+        maxWidth: 250
+      });
+      
+      // Museum Ship Valley Camp
+      var popup_5 = L.popup()
+      .setContent('<h3>Museum Ship Valley Camp</h3> <img id="popup_image" src="images/ship.jpg" height=auto width="250px" ></img>  <br> <p>Although no known tragedy is associated with the ship itself, it does house artifacts from shipwrecks which resulted in the loss of life. On one occasion, a heavy coughing sound was heard in the old coal furnace area. When asked what the sound was, a voice was captured on a recording device stating "I am coughing". Shadowy figures have also been reported on the ship deck at night.</p>');
+      
+      var marker_5 = L.marker([46.499152, -84.336494],{
+        icon: candyCorn
+      }).addTo(map);
+      marker_5.bindPopup(popup_5, {
+        maxWidth: 250,
+        keepInView: true
+      });
+
+
+    </script>
+  
+  </body>
+</html>
+
+<script>
+  $(document).ready(function(){
+  $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();
+  });
+</script>
